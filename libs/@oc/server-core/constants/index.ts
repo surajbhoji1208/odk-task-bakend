@@ -1,17 +1,16 @@
 export const UserEntityConstant = {
-    FirstNameMaxLength: 100,
-    LastNameMaxLength: 100,
+    FullNameMaxLength: 100,
     EmailMaxLength: 255,
     PasswordMaxLength: 255,
+    PhoneNumberMaxLength: 15,
+    EncryptedPasswordMaxLength: 255,
+    SaltMaxLength: 255,
 };
 
 export enum DatabaseUniqueKey {
     UserEmailUserType = 'UQ_user_email_user_type_deleted_at',
 }
 
-export enum ModuleName {
-    USER = 'user',
-}
 
 export const SuccessConstant = {
     AddSuccessAction: 'ADD_SUCCESS',
@@ -22,9 +21,11 @@ export const SuccessConstant = {
     SuccessAction: 'SUCCESS',
 };
 
-export function MapToModuleName(module: ModuleName): string {
-    const map: Record<ModuleName, string> = {
-        [ModuleName.USER]: 'User',
+export function MapToModuleName(module: any): string {
+    const map: Record<any, string> = {
+        [module.USER]: 'User',
     };
     return map[module];
 }
+
+export * from './permissions.constant'
