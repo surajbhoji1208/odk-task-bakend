@@ -1,1 +1,1 @@
-export * from './typeorm-shared.module';
+// export * from './typeorm-shared.module';
