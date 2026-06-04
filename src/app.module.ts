@@ -7,7 +7,7 @@ import { typeOrmConfig } from 'libs/@oc/server-core/config/typeorm.config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `.env.${process.env.NODE_ENV}`,
+      envFilePath: process.env.NODE_ENV ? `.env.${process.env.NODE_ENV}` : '.env',
       load: [configuration],
       isGlobal: true
     }),
