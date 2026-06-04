@@ -14,7 +14,7 @@ import { v4 as uuidv4 } from 'uuid';
  * User entity representing user accounts in the system
  */
 @Entity("user")
-@Unique(DatabaseUniqueKey.UserEmailUserType, ["uuid", "email", "roleId", "deletedAt"])
+@Unique(DatabaseUniqueKey.UserEmailUserType, ["uuid", "email", "deletedAt"])
 export class User extends BaseModifiableEntityWithoutIdentity {
     @PrimaryGeneratedColumn()
     id: number;

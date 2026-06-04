@@ -22,16 +22,16 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@business-core-dto":         ["libs/@oc/business-core/dto/index.ts"],
-      "@business-core-modules":     ["libs/@oc/business-core/modules/index.ts"],
-      "@core-database":             ["libs/@oc/server-core/database/index.ts"],
-      "@core-enums":                ["libs/@oc/server-core/enums/index.ts"],
-      "@core-constants":            ["libs/@oc/server-core/constants/index.ts"],
-      "@core-utilities":            ["libs/@oc/server-core/utilities/index.ts"],
-      "@core-custom-validators":    ["libs/@oc/server-core/custom-validators/index.ts"],
-      "@core-custom-decorators":    ["libs/@oc/server-core/custom-decorators/index.ts"],
-      "@core-custom-guards":        ["libs/@oc/server-core/custom-guards/index.ts"],
-      "@core-shared-modules":       ["libs/@oc/server-core/shared-modules/index.ts"]
+      "@business-core-dto":         ["libs/@oc/business-core/dto/index"],
+      "@business-core-modules":     ["libs/@oc/business-core/modules/index"],
+      "@core-database":             ["libs/@oc/server-core/database/index"],
+      "@core-enums":                ["libs/@oc/server-core/enums/index"],
+      "@core-constants":            ["libs/@oc/server-core/constants/index"],
+      "@core-utilities":            ["libs/@oc/server-core/utilities/index"],
+      "@core-custom-validators":    ["libs/@oc/server-core/custom-validators/index"],
+      "@core-custom-decorators":    ["libs/@oc/server-core/custom-decorators/index"],
+      "@core-custom-guards":        ["libs/@oc/server-core/custom-guards/index"],
+      "@core-shared-modules":       ["libs/@oc/server-core/shared-modules/index"]
     }
   }
 }
